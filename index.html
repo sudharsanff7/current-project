@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AskMe - Futuristic Website</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        body video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100vw;
+            min-height: 100vh;
+            z-index: -1;
+            object-fit: cover;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        .section {
+            padding: 5rem 2rem;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            width: 300px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #ccc;
+        }
+
+        .cta {
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: background 0.3s;
+        }
+
+        .cta:hover {
+            background: #45a049;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 2rem;
+            text-align: center;
+            color: #ccc;
+            font-size: 0.9rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="video7.mp4"video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <nav>
+        <div>AskMe</div>
+        <div>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header class="section">
+        <h1>Welcome to AskMe</h1>
+        <p>Your gateway to a futuristic experience to do your work as project</p>
+    </header>
+
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>Welcome to my website! I’m a versatile editor, designer, and website creator dedicated to bringing your ideas to life.
+             Whether you need captivating videos, stunning graphic designs, or a user-friendly website tailored to your needs—I've got you covered. 
+             Let’s collaborate to create impactful solutions that elevate your brand and help your business grow.</p>
+    </section>
+
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>AI Assistance</h3>
+                <p>24/7 intelligent support tailored to your needs.</p>
+            </div>
+            <div class="card">
+                <h3>Custom Solutions</h3>
+                <p>Innovative tools designed for your unique requirements.</p>
+            </div>
+            <div class="card">
+                <h3>Futuristic Designs</h3>
+                <p>Stay ahead with our modern and sleek designs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us at <a href="mailto:sudharsans573@gmail.com">sudharsans573@gmail.com</a></p>
+        <p>Contact Number: <a href="tel:+1234567890">9150945342</a></p>
+        <p>Follow us on Instagram: <a href="https://instagram.com/your_instagram_handle" target="_blank">@mr.sudharsan_</a></p>
+        <button class="cta">Get Started</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 AskMe. All rights reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
